@@ -1,0 +1,26 @@
+version: "3.1"
+
+stories:
+
+- story: play guess animal
+  steps:
+  - intent: greet
+  - action: utter_play
+  - intent: legs
+  - action: action_play_guess
+  - intent: color
+  - action: action_play_guess
+  - intent: animal
+  - action: action_play_guess
+
+- story: play again
+  steps:
+  - action: utter_play_again
+  - intent: affirm
+  - action: utter_play
+
+- story: dont play again
+  steps:
+  - action: utter_play_again
+  - intent: deny
+  - action: utter_goodbye

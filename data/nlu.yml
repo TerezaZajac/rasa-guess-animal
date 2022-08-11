@@ -1,0 +1,95 @@
+version: "3.1"
+
+nlu:
+
+- intent: legs
+  examples: |
+    - how many [legs](legs) do you have?
+    - do you have [legs](legs)?
+    - how many [legs](legs) does it have?
+    - does it have legs?
+    - does it have [2](legs) legs?
+    - does it have [4](legs) legs?
+    - does it have [6](legs) legs?
+    - does it have [8](legs) legs?
+
+
+- intent: animal
+  examples: |
+    - is it (animal)?
+    - is it a (animal)?
+    - is it an (animal)?
+
+
+- intent: color
+  examples: |
+    - what is your colour
+    - what color is it
+    - are you [black](color)
+    - are you [white](color)
+    - are you [green](color)
+    - are you [gray](color)
+    - are you [brown](color)
+    - are you [yellow](color)
+    - is it [black](color)
+    - is it [white](color) 
+    - is it [green](color)
+    - is it [gray](color)
+    - is it [brown](color)
+    - is it [yellow](color)
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
