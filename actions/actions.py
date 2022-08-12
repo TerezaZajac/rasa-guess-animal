@@ -40,13 +40,12 @@ class ActionPlayGuessAnimal(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-
         #logging.info(tracker.latest_message)
         logging.info(tracker.get_slot('color'))
         logging.info(tracker.get_slot('legs'))
         logging.info(tracker.get_slot('animal'))
     
-        
+        # TODO: translate text number to integer: two->2 four->4
         if tracker.get_intent_of_latest_message() == 'legs':
             legs = re.findall('\d', tracker.latest_message['text'])
             if len(legs) and int(legs[0]) == self.animal['legs']:
