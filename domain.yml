@@ -8,24 +8,20 @@ intents:
   - bot_challenge
   - color
   - legs
+  - size
+  - food
   - animal
+  - habitation
 
 entities: 
-  - choice
   - legs
   - color
   - animal
+  - size
+  - food
+  - habitation
 
 slots:
-  choice:
-    type: categorical
-    values:
-      - rock
-      - paper
-      - scissors
-    mappings:
-      - type: from_entity
-        entity: choice
   color:
     type: categorical
     values:
@@ -35,23 +31,124 @@ slots:
       - green
       - grey
       - black
+      - orange
+      - red
     mappings:
       - type: from_entity
         entity: color
+
   legs:
-    type: text
+    type: categorical
+    values:
+      - 2
+      - 4
+      - 6
+      - 8
+      - two
+      - four
+      - six
+      - eight
     mappings:
       - type: from_entity
         entity: legs
+
   animal:
-    type: text
+    type: categorical
+    values:
+      - bat
+      - bear
+      - bee
+      - dolphin
+      - frog
+      - panda
+      - parrot
+      - python
+      - spider
+      - tiger
     mappings:
       - type: from_entity
         entity: animal
 
+  size:
+    type: categorical
+    values:
+      - small
+      - medium
+      - big
+    mappings:
+      - type: from_entity
+        entity: size
+
+  habitation: 
+    type: categorical
+    values:
+      - sea
+      - water
+      - ocean
+      - lake
+      - pond
+      - river
+      - forest
+      - jungle
+      - savanna
+      - desert
+      - mountains
+      - field
+      - meadow
+      - freshwater
+      - tundra
+      - taiga
+      - swamp
+      - grassland
+      - rainforest
+      - indoor
+      - Africa
+      - America
+      - Asia
+      - Australia
+      - Europe
+    mappings:
+      - type: from_entity
+        entity: habitation
+
+  food:
+    type: categorical
+    values:
+      - meat
+      - leaves
+      - grass
+      - fish
+      - flowers
+      - insect
+      - mice
+      - bamboo
+      - honey
+      - fruit
+      - seeds
+      - nuts
+      - vegetable
+      - berries
+      - bugs
+      - carnivore
+      - herbivore
+      - omnivore
+    mappings:
+      - type: from_entity
+        entity: food
+
+
+
+
+
+     
+
+
 responses:
+  utter_greet:
+  - text: "Hello and welcome to the Guess the Animal game."
+
   utter_play:
-  - text: "Guess animal, ask for legs and color"
+  - text: "I will think of some random animal and you can ask me question about it. Ask me about the color, size, number of legs, habitation, food or how does it move"
 
   utter_play_again:
   - text: "Do you want to play again?"

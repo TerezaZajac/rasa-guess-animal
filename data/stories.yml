@@ -5,10 +5,15 @@ stories:
 - story: play guess animal
   steps:
   - intent: greet
+  - action: utter_greet
   - action: utter_play
   - intent: legs
   - action: action_play_guess
   - intent: color
+  - action: action_play_guess
+  - intent: food
+  - action: action_play_guess
+  - intent: habitation
   - action: action_play_guess
   - intent: animal
   - action: action_play_guess

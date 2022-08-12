@@ -5,20 +5,91 @@ nlu:
 - intent: legs
   examples: |
     - how many [legs](legs) do you have?
-    - do you have [legs](legs)?
+    - do you have legs?
     - how many [legs](legs) does it have?
     - does it have legs?
     - does it have [2](legs) legs?
+    - does it have [two](legs) legs?
     - does it have [4](legs) legs?
+    - does it have [four](legs) legs?
     - does it have [6](legs) legs?
+    - does it have [six](legs) legs?
     - does it have [8](legs) legs?
+    - does it have [eight](legs) legs?
 
+- intent: size
+  examples: |
+    - what size is it?
+    - how big is it?
+    - is it [small](size)?
+    - is it [big](size)?
+    - is it [medium](size) size?
+
+- intent: food
+  examples: |
+    - What does it eat?
+    - Does it eat [meat](food)?
+    - does it eat [leaves](food)?
+    - does it eat [grass](food)?
+    - does is eat [fish](food)?
+    - does it eat [flowers](food)?
+    - does it eat [insect](food)?
+    - does it eat [mice](food)?
+    - does it eat [bamboo](food)?
+    - does it eat [honey](food)?
+    - does it eat [fruit](food)?
+    - does it eat [seeds](food)?
+    - does it eat [nuts](food)?
+    - does it eat [vegetable](food)?
+    - does it eat [berries](food)?
+    - does it eat [bugs](food)?
+    - is it [carnivore](food)?
+    - is it [herbivore](food)?
+    - is it [omnivore](food)?
+
+- intent: habitation
+  examples: |
+    - Where does it live?
+    - What enviroment does it live in?
+    - What is its habitation?
+    - Does it live in Africa?
+    - Does it live in Asia?
+    - Does it live in Australia?
+    - Does it live in North America?
+    - Does it live in South America?
+    - Does it live in rainforest?
+    - Does it live in forest?
+    - Does it live in mountains?
+    - Does it live in desert?
+    - Does it live in jungle?
+    - Does it live in grassland?
+    - Does it live in savanna?
+    - Does it live in taiga?
+    - Does it live in tundra?
+    - Does it live in swamp?
+    - Does it live in indoor
+    - Does it live in Europe
+    - Does it live in ocean
+    - Does it live in sea
+    - Does it live in lake
+    - Does it live in pond
+    - Does it live in water
+    - Does it live in freshwater
+    - Does it live in river
 
 - intent: animal
   examples: |
-    - is it (animal)?
-    - is it a (animal)?
-    - is it an (animal)?
+    - is it a [spider](animal)?
+    - is it a [python](animal)?
+    - is it a [bear](animal)?
+    - is it a [bat](animal)?
+    - is it a [bee](animal)?
+    - is it a [frog](animal)?
+    - is it a [tiger](animal)?
+    - is it a [parrot](animal)?
+    - is it a [panda](animal)?
+    - is it a [dolphin](animal)?
+    
 
 
 - intent: color
