@@ -5,7 +5,6 @@
 # https://rasa.com/docs/rasa/custom-actions
 
 import logging
-import re
 from typing import Any, Text, Dict, List
 import random
 from rasa_sdk import Action, Tracker
