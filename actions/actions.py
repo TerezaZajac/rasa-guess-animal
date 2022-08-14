@@ -119,14 +119,14 @@ class ActionPlayGuessAnimal(Action):
                 self.shuffle()
             else:
                 dispatcher.utter_message(text=f'Sorry, but it is not a {tracker.get_slot("animal")}.')
-            return []
-            
-            # #[SlotSet("legs", None),
-            #     SlotSet("color", None),
-            #     SlotSet("animal", None),
-            #     SlotSet("size", None),
-            #     SlotSet("food", None),
-            #     SlotSet("habitation", None)]
+            return [
+                SlotSet("legs", None),
+                SlotSet("color", None),
+                SlotSet("animal", None),
+                SlotSet("size", None),
+                SlotSet("food", None),
+                SlotSet("movement", None)
+                ]
         
         #dispatcher.utter_message(text="Perfect")
         #dispatcher.utter_message(response = 'utter_play_again')
