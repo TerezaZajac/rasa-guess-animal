@@ -15,6 +15,8 @@ stories:
   - action: action_play_guess
   - intent: habitation
   - action: action_play_guess
+  - intent: movement
+  - action: action_play_guess
   - intent: animal
   - action: action_play_guess
 
@@ -23,9 +25,82 @@ stories:
   - action: utter_play_again
   - intent: affirm
   - action: utter_play
+  - action: action_play_guess
 
 - story: dont play again
   steps:
   - action: utter_play_again
   - intent: deny
   - action: utter_goodbye
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_play
+  - intent: legs
+    entities:
+    - legs: two
+  - slot_was_set:
+    - legs: two
+  - action: action_play_guess
+  - intent: color
+    entities:
+    - color: green
+  - slot_was_set:
+    - color: green
+  - action: action_play_guess
+  - intent: size
+    entities:
+    - size: small
+  - slot_was_set:
+    - size: small
+  - action: action_play_guess
+  - intent: size
+    entities:
+    - size: big
+  - slot_was_set:
+    - size: big
+  - action: action_play_guess
+  - intent: habitation
+  - action: action_play_guess
+  - intent: food
+    entities:
+    - food: bamboo
+  - slot_was_set:
+    - food: bamboo
+  - action: action_play_guess
+  - intent: animal
+    entities:
+    - animal: panda
+  - slot_was_set:
+    - animal: panda
+  - action: action_play_guess
+  - intent: affirm
+  - action: utter_play
+  - action: action_play_guess
+  - intent: color
+    entities:
+    - color: black
+  - slot_was_set:
+    - color: black
+  - action: action_play_guess
+  - intent: color
+  - action: action_play_guess
+  - intent: legs
+    entities:
+    - legs: legs
+  - slot_was_set:
+    - legs: legs
+  - action: action_play_guess
+  - intent: habitation
+  - action: action_play_guess
+  - intent: animal
+    entities:
+    - animal: panda
+  - slot_was_set:
+    - animal: panda
+  - action: action_play_guess
+  - intent: deny
+  - action: utter_goodbye
+  - intent: greet

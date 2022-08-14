@@ -1,12 +1,9 @@
 version: "3.1"
-
 nlu:
-
 - intent: legs
   examples: |
-    - how many [legs](legs) do you have?
+    - how many legs do you have?
     - do you have legs?
-    - how many [legs](legs) does it have?
     - does it have legs?
     - does it have [2](legs) legs?
     - does it have [two](legs) legs?
@@ -16,7 +13,8 @@ nlu:
     - does it have [six](legs) legs?
     - does it have [8](legs) legs?
     - does it have [eight](legs) legs?
-
+    - does it have [two](legs) legs
+    - how many legs does it have
 - intent: size
   examples: |
     - what size is it?
@@ -24,7 +22,8 @@ nlu:
     - is it [small](size)?
     - is it [big](size)?
     - is it [medium](size) size?
-
+    - is it [small](size)
+    - is it [big](size)
 - intent: food
   examples: |
     - What does it eat?
@@ -46,7 +45,7 @@ nlu:
     - is it [carnivore](food)?
     - is it [herbivore](food)?
     - is it [omnivore](food)?
-
+    - does it eat [bamboo](food)
 - intent: habitation
   examples: |
     - Where does it live?
@@ -76,7 +75,8 @@ nlu:
     - Does it live in water
     - Does it live in freshwater
     - Does it live in river
-
+    - where does it live
+    - does it live in forest?
 - intent: animal
   examples: |
     - is it a [spider](animal)?
@@ -89,9 +89,7 @@ nlu:
     - is it a [parrot](animal)?
     - is it a [panda](animal)?
     - is it a [dolphin](animal)?
-    
-
-
+    - is it [panda](animal)?
 - intent: color
   examples: |
     - what is your colour
@@ -103,12 +101,23 @@ nlu:
     - are you [brown](color)
     - are you [yellow](color)
     - is it [black](color)
-    - is it [white](color) 
+    - is it [white](color)
     - is it [green](color)
     - is it [gray](color)
     - is it [brown](color)
     - is it [yellow](color)
-
+    - is it [green](color)
+    - is it [black](color)?
+    - what color is it?
+- intent: movement
+  examples: |
+    - Can it [fly](movement)?
+    - Can it [jump](movement)?
+    - Can it [run](movement)?
+    - can it [swim](movement)?
+    - can it [craw]l(movement)?
+    - can it [climb](movement)?
+    - How does it move?
 - intent: greet
   examples: |
     - hey
@@ -124,7 +133,6 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
-
 - intent: goodbye
   examples: |
     - cu
@@ -137,7 +145,6 @@ nlu:
     - see you around
     - bye bye
     - see you later
-
 - intent: affirm
   examples: |
     - yes
@@ -146,7 +153,6 @@ nlu:
     - of course
     - that sounds good
     - correct
-
 - intent: deny
   examples: |
     - no
@@ -156,8 +162,6 @@ nlu:
     - don't like that
     - no way
     - not really
-
-
 - intent: bot_challenge
   examples: |
     - are you a bot?
