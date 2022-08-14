@@ -115,7 +115,7 @@ nlu:
     - Can it [jump](movement)?
     - Can it [run](movement)?
     - can it [swim](movement)?
-    - can it [craw]l(movement)?
+    - can it [crawl]l(movement)?
     - can it [climb](movement)?
     - How does it move?
 - intent: greet
