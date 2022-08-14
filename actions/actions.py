@@ -34,7 +34,7 @@ class ActionPlayGuessAnimal(Action):
             ]
         
         self.animal = animals[random.randint(0, len(animals)-1)]
-
+       
     def is_w_question(self, message):
         return message.find('how') == 0 or message.find('what') == 0 or message.find('where') == 0
 
@@ -57,12 +57,16 @@ class ActionPlayGuessAnimal(Action):
         if tracker.get_intent_of_latest_message() == 'legs':
             if self.is_w_question(message):
                 dispatcher.utter_message(text=f'It has {self.animal["legs"][0]} legs')
+            elif legs == None: 
+                if self.animal['legs'][0] == 0: 
+                    dispatcher.utter_message(text=f'It does not have any legs.')
+                else:
+                    dispatcher.utter_message(text=f'it has some legs.') 
             elif legs in self.animal['legs']:
                 dispatcher.utter_message(text=f'Yes, it has {legs} legs')
             else:
                 dispatcher.utter_message(text=f'No it does not have {legs} legs')
             return []
-
 
         if tracker.get_intent_of_latest_message() == 'color':
             if self.is_w_question(message):
