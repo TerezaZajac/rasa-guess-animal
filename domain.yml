@@ -12,6 +12,7 @@ intents:
 - legs
 - size
 - movement
+
 entities:
 - legs
 - animal
@@ -20,8 +21,8 @@ entities:
 - size
 - habitation
 - movement
-slots:
 
+slots:
   color:
     type: categorical
     values:
@@ -128,11 +129,13 @@ responses:
   - text: Bye
   utter_iamabot:
   - text: I am a bot, powered by Rasa.
+
 actions:
 - action_play_guess
 - utter_goodbye
 - utter_greet
 - utter_play
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
